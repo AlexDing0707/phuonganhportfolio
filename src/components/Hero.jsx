@@ -2,6 +2,9 @@ import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import { Superpowers } from './TypedText';
+
+const superpowers = ['Phuong Anh', 'mysterious', 'unpredictable'];
 
 const Hero = () => {
   return (
@@ -15,9 +18,7 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Phuong Anh</span>
-          </h1>
+          <Superpowers superpowers={superpowers} />
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I Don't Always Have Time to Study <br className='sm:block hidden' />
             But When I Do I Still Don't 😈
